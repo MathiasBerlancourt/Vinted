@@ -14,9 +14,9 @@ const offerRoutes = require("./routes/offer");
 const cloudinary = require("cloudinary").v2; //On met bien le v2 comme mentionné dans la doc
 
 cloudinary.config({
-  cloud_name: "dg8eoc9io",
-  api_key: "581346678434931",
-  api_secret: "NCaz6n1AwG5r8su3XOYyy6IcotE",
+  cloud_name: CLOUDINARY_CLOUD_NAME,
+  api_key: CLOUDINARY_API_KEY,
+  api_secret: CLOUDINARY_API_SECRET,
   secure: true,
 });
 app.use(userRoutes);
